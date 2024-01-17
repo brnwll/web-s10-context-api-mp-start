@@ -95,7 +95,9 @@ export function QuotesProvider(props) {
     editQuoteAuthenticity,
     setHighlightedQuote,
     toggleVisibility,
-    ...state,
+    displayAllQuotes: state.displayAllQuotes,
+    highlightedQuote: state.highlightedQuote,
+    quotes: state.quotes,
   };
   return (
     <QuotesContext.Provider value={dataToProvide}>
